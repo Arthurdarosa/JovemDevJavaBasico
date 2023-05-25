@@ -18,7 +18,7 @@ public class Jogador {
 	}
 	
 	static int escolheOP() {
-		String opcao = "1 - para cadastrar jogador"
+		String opcao = "1 - para cadastrar jogador \r\n"
 			+ "2 - para sair";
 		return Integer.parseInt(JOptionPane.showInputDialog(opcao));
 	}

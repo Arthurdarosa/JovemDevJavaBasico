@@ -10,9 +10,9 @@ public class Uteis {
 	static int escolheOP() {
 		String menu = "1 – Cadastrar time\r\n" 
 				+ "2 – mostrar time com mais gols \r\n"
-				+ "3 - mostrar o artilheiro do campeonato \\r\\n" 
-				+ "4 - mostrar todos os jogadores de um time \\r\\n"
-				+ "5 - para sair \\r\\n";
+				+ "3 - mostrar o artilheiro do campeonato \r\n" 
+				+ "4 - mostrar todos os jogadores de um time \r\n"
+				+ "5 - para sair \r\n";
 		return Integer.parseInt(JOptionPane.showInputDialog(menu));
 	}
 

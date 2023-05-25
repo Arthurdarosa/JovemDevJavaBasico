@@ -25,10 +25,15 @@ public class Main {
 					Jogador j = new Jogador();
 					j.cadastrarJogador();
 					jogador.add(j);
+					op = Jogador.escolheOP();
 				} while (op!=2);
+				op = Uteis.escolheOP();
 				break;
 			case 2:
 				Uteis.timeMaisGols(lista);
+				break;
+			case 3:
+				Uteis.getArtilheiroCampe(lista);
 				break;
 			case 4:
 				Uteis.listaJogadoresTime(lista);
@@ -39,7 +44,7 @@ public class Main {
 			default:
 				JOptionPane.showMessageDialog(null, "Opção inválida");
 			}
-		}while(op != 2);
+		}while(op != 5);
 	}
 
 }
