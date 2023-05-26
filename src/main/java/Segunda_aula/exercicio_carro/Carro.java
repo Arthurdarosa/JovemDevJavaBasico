@@ -1,22 +1,27 @@
-package Segunda_aula.exercicio_carro;
+import java.util.*;
 
-import java.util.ArrayList;
 
-import javax.swing.JOptionPane;
-
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-public class Carro {
-	EnumCor cores;
-	String marcas;
-	int ano;
-		
-	void cadastrar() {
-		marcas = JOptionPane.showInputDialog("marca");
-		ano = Integer.parseInt(JOptionPane.showInputDialog("ano"));
-	}
-	
+// Classe para representar um carro
+class Carro {
+    private String marca;
+    private int ano;
+    private Cor cor;
+    
+    public Carro(String marca, int ano, Cor cor) {
+        this.marca = marca;
+        this.ano = ano;
+        this.cor = cor;
+    }
+    
+    public String getMarca() {
+        return marca;
+    }
+    
+    public int getAno() {
+        return ano;
+    }
+    
+    public Cor getCor() {
+        return cor;
+    }
 }
